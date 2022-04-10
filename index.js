@@ -99,29 +99,43 @@
 // challenge 5 : maxCharecter
 // return the charecter that is most Comment
 
-function maxCharecter(str) {
-	const charMap = {};
-	let maxNum = 0;
-	let maxChar = "";
+// function maxCharecter(str) {
+// 	const charMap = {};
+// 	let maxNum = 0;
+// 	let maxChar = "";
 
-	str.split("").forEach(function (char) {
-		if (charMap[char]) {
-			charMap[char]++;
+// 	str.split("").forEach(function (char) {
+// 		if (charMap[char]) {
+// 			charMap[char]++;
+// 		} else {
+// 			charMap[char] = 1;
+// 		}
+// 	});
+// 	for (let char in charMap) {
+// 		if (charMap[char] > maxNum) {
+// 			maxNum = charMap[char];
+// 			maxChar = char;
+// 		}
+// 	}
+
+// 	return maxChar;
+// }
+/////////////////////////////
+// challenge 6 fizzBuzz
+
+function fizzBuzz(num) {
+	for (let i = 1; i <= num; i++) {
+		if (i % 15 === 0) {
+			console.log("FizzBuzz");
+		} else if (i % 3 === 0) {
+			console.log("Fizz");
+		} else if (i % 5 === 0) {
+			console.log("Buzz");
 		} else {
-			charMap[char] = 1;
-		}
-	});
-	for (let char in charMap) {
-		if (charMap[char] > maxNum) {
-			maxNum = charMap[char];
-			maxChar = char;
+			console.log(i);
 		}
 	}
-	// console.log(charMap);
-	// console.log(maxNum);
-	// console.log(maxChar);
-	return maxChar;
 }
 
-const output = maxCharecter("javascript");
+const output = fizzBuzz(100);
 console.log(output);
