@@ -1,7 +1,7 @@
 // challenge 1 ..  reverse a string .
 //return a string in reverseNumber.
-function reverseString(Int) {
-	return "the solution is ";
+function reverseString(str) {
+	return str.split("").reverse().join("");
 }
 
 //  call function
