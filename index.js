@@ -1,9 +1,6 @@
 // challenge 1 ..  reverse a string .
 //return a string in reverseNumber.
-function reverseNumber(Int) {
-	str;
-}
-{
+function reverseString(Int) {
 	return "the solution is ";
 }
 
