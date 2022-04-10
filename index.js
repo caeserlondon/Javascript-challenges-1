@@ -56,13 +56,28 @@
 
 ////////////////////////////////
 
-//
-// challenge 3 reverse an integer
-function reverseInt(int) {
-	const revString = int.toString().split("").reverse().join("");
-	return parseInt(revString) * Math.sign(int);
+// //
+// // challenge 3 reverse an integer
+// function reverseInt(int) {
+// 	const revString = int.toString().split("").reverse().join("");
+// 	return parseInt(revString) * Math.sign(int);
+// }
+
+// const output = reverseInt(-17893);
+
+//////////////////////////////////////
+
+// challenge 4 CAPITALIZE LETTER
+
+function capitalaizeLetters(str) {
+	const strArr = str.toLowerCase().split(" ");
+
+	for (let i = 0; i < strArr.length; i++) {
+		strArr[i] =
+			strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+	}
+	return strArr.join(" ");
 }
 
-const output = reverseInt(-17893);
-
+const output = capitalaizeLetters("i love javascript");
 console.log(output);
