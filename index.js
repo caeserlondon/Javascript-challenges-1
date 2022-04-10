@@ -22,10 +22,17 @@ function reverseString(str) {
 
 	////////////////////////
 
+	// let revString = "";
+	// for (let char of str) {
+	// 	revString = char + revString;
+	// }
+	// return revString;
+
+	//////////////////////
 	let revString = "";
-	for (let char of str) {
+	str.split("").forEach((char) => {
 		revString = char + revString;
-	}
+	});
 	return revString;
 }
 
