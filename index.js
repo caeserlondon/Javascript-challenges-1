@@ -89,11 +89,39 @@
 // }
 ///////////////////////////////////////////
 
-function capitalaizeLetters(str) {
-	return str.replace(/\b[a-z]/gi, function (char) {
-		return char.toUpperCase();
+// function capitalaizeLetters(str) {
+// 	return str.replace(/\b[a-z]/gi, function (char) {
+// 		return char.toUpperCase();
+// 	});
+// }
+/////////////////////////////////////
+
+// challenge 5 : maxCharecter
+// return the charecter that is most Comment
+
+function maxCharecter(str) {
+	const charMap = {};
+	let maxNum = 0;
+	let maxChar = "";
+
+	str.split("").forEach(function (char) {
+		if (charMap[char]) {
+			charMap[char]++;
+		} else {
+			charMap[char] = 1;
+		}
 	});
+	for (let char in charMap) {
+		if (charMap[char] > maxNum) {
+			maxNum = charMap[char];
+			maxChar = char;
+		}
+	}
+	// console.log(charMap);
+	// console.log(maxNum);
+	// console.log(maxChar);
+	return maxChar;
 }
 
-const output = capitalaizeLetters("i love javascript");
+const output = maxCharecter("javascript");
 console.log(output);
