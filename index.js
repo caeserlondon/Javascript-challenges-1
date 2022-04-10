@@ -28,12 +28,17 @@ function reverseString(str) {
 	// }
 	// return revString;
 
-	//////////////////////
-	let revString = "";
-	str.split("").forEach((char) => {
-		revString = char + revString;
-	});
-	return revString;
+	// //////////////////////
+
+	// let revString = "";
+	// str.split("").forEach((char) => {
+	// 	revString = char + revString;
+	// });
+	// return revString;
+
+	//////////////////////////////
+
+	return str.split("").reduce((revString, char) => char + revString, "");
 }
 
 //  call function
