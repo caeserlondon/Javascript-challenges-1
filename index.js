@@ -65,18 +65,27 @@
 
 // const output = reverseInt(-17893);
 
-//////////////////////////////////////
+//////////////////////////////////////////////////
 
 // challenge 4 CAPITALIZE LETTER
 
-function capitalaizeLetters(str) {
-	const strArr = str.toLowerCase().split(" ");
+// function capitalaizeLetters(str) {
+// 	const strArr = str.toLowerCase().split(" ");
 
-	for (let i = 0; i < strArr.length; i++) {
-		strArr[i] =
-			strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
-	}
-	return strArr.join(" ");
+// 	for (let i = 0; i < strArr.length; i++) {
+// 		strArr[i] =
+// 			strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+// 	}
+// 	return strArr.join(" ");
+// }
+/////////////////////////////
+
+function capitalaizeLetters(str) {
+	return str
+		.toLowerCase()
+		.split(" ")
+		.map((word) => word[0].toUpperCase() + word.substr(1))
+		.join(" ");
 }
 
 const output = capitalaizeLetters("i love javascript");
