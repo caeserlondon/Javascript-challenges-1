@@ -1,7 +1,16 @@
 // challenge 1 ..  reverse a string .
 //return a string in reverseNumber.
 function reverseString(str) {
-	return str.split("").reverse().join("");
+	//	return str.split("").reverse().join("");
+
+	//////////////////////
+
+	let revString = "";
+	for (let i = str.lenght - 1; i >= 0; i--) {
+		//	revString = revString + str[i];
+		console.log(i);
+	}
+	return revString;
 }
 
 //  call function
