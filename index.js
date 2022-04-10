@@ -80,12 +80,19 @@
 // }
 /////////////////////////////
 
+// function capitalaizeLetters(str) {
+// 	return str
+// 		.toLowerCase()
+// 		.split(" ")
+// 		.map((word) => word[0].toUpperCase() + word.substr(1))
+// 		.join(" ");
+// }
+///////////////////////////////////////////
+
 function capitalaizeLetters(str) {
-	return str
-		.toLowerCase()
-		.split(" ")
-		.map((word) => word[0].toUpperCase() + word.substr(1))
-		.join(" ");
+	return str.replace(/\b[a-z]/gi, function (char) {
+		return char.toUpperCase();
+	});
 }
 
 const output = capitalaizeLetters("i love javascript");
