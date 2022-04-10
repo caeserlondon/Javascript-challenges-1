@@ -11,10 +11,20 @@ function reverseString(str) {
 	// 	console.log(i);
 	// }
 	// return revString;
+
 	///////////////////
+
+	// let revString = "";
+	// for (let i = 0; i <= str.length - 1; i++) {
+	// 	revString = str[i] + revString;
+	// }
+	// return revString;
+
+	////////////////////////
+
 	let revString = "";
-	for (let i = 0; i <= str.length - 1; i++) {
-		revString = str[i] + revString;
+	for (let char of str) {
+		revString = char + revString;
 	}
 	return revString;
 }
