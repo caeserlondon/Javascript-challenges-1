@@ -5,10 +5,16 @@ function reverseString(str) {
 
 	//////////////////////
 
+	// let revString = "";
+	// for (let i = str.lenght - 1; i >= 0; i--) {
+	// 	//	revString = revString + str[i];
+	// 	console.log(i);
+	// }
+	// return revString;
+	///////////////////
 	let revString = "";
-	for (let i = str.lenght - 1; i >= 0; i--) {
-		//	revString = revString + str[i];
-		console.log(i);
+	for (let i = 0; i <= str.length - 1; i++) {
+		revString = str[i] + revString;
 	}
 	return revString;
 }
