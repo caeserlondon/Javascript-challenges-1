@@ -42,6 +42,9 @@
 
 // const output = reverseString("hello");
 // }
+
+////////////////////////////////////////////////////
+
 // challenge 2   validate a palindrome and return true or false.
 
 // function isPalindrome(str) {
@@ -54,7 +57,7 @@
 
 // console.log(output);
 
-////////////////////////////////
+////////////////////////////////////////////////
 
 // //
 // // challenge 3 reverse an integer
@@ -78,7 +81,7 @@
 // 	}
 // 	return strArr.join(" ");
 // }
-/////////////////////////////
+////////////////////////
 
 // function capitalaizeLetters(str) {
 // 	return str
@@ -87,14 +90,14 @@
 // 		.map((word) => word[0].toUpperCase() + word.substr(1))
 // 		.join(" ");
 // }
-///////////////////////////////////////////
+///////////////////////
 
 // function capitalaizeLetters(str) {
 // 	return str.replace(/\b[a-z]/gi, function (char) {
 // 		return char.toUpperCase();
 // 	});
 // }
-/////////////////////////////////////
+///////////////////////////////////////////////
 
 // challenge 5 : maxCharecter
 // return the charecter that is most Comment
@@ -123,19 +126,19 @@
 /////////////////////////////
 // challenge 6 fizzBuzz
 
-function fizzBuzz(num) {
-	for (let i = 1; i <= num; i++) {
-		if (i % 15 === 0) {
-			console.log("FizzBuzz");
-		} else if (i % 3 === 0) {
-			console.log("Fizz");
-		} else if (i % 5 === 0) {
-			console.log("Buzz");
-		} else {
-			console.log(i);
-		}
-	}
-}
+// function fizzBuzz(num) {
+// 	for (let i = 1; i <= num; i++) {
+// 		if (i % 15 === 0) {
+// 			console.log("FizzBuzz");
+// 		} else if (i % 3 === 0) {
+// 			console.log("Fizz");
+// 		} else if (i % 5 === 0) {
+// 			console.log("Buzz");
+// 		} else {
+// 			console.log(i);
+// 		}
+// 	}
+// }
 
-const output = fizzBuzz(100);
+// const output = fizzBuzz(100);
 console.log(output);
